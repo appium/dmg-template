@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Appium Terminology">
+	<suite name="Appium Suite" code="APMS" description="Appium application specific scripting facilities.">
+		<enumeration name="ios device" code="ciod" description="ios device">
+			<enumerator name="ipad" code="cipa" description="ipad">
+				<cocoa string-value="ipad"/>
+			</enumerator>
+			<enumerator name="iphone" code="ciph" description="iphone">
+				<cocoa string-value="iphone"/>
+			</enumerator>
+			<enumerator name="no device" code="cdno" description="no device">
+				<cocoa string-value="no device"/>
+			</enumerator>
+		</enumeration>
+		<enumeration name="platform" code="cpfm" description="platform">
+			<enumerator name="android" code="cpan" description="android platform">
+				<cocoa string-value="android"/>
+			</enumerator>
+			<enumerator name="ios" code="cpio" description="ios platform">
+				<cocoa string-value="ios"/>
+			</enumerator>
+		</enumeration>
+		<enumeration name="orientation" code="corn" description="platform">
+			<enumerator name="portrait" code="corp" description="portrait orientation">
+				<cocoa string-value="portrait"/>
+			</enumerator>
+			<enumerator name="landscape" code="corl" description="landscape orientation">
+				<cocoa string-value="landscape"/>
+			</enumerator>
+			<enumerator name="no orientation" code="cdno" description="no device">
+				<cocoa string-value="no orientation"/>
+			</enumerator>
+		</enumeration>
+		<class name="application" code="capp" description="Appium Application">
+			<cocoa class="NSApplication"/>
+			<property name="android activity" code="apaa" description="name of android activity" type="text">
+				<cocoa key="s_AndroidActivity"/>
+			</property>
+			<property name="android device ready timeout" code="amdt" description="time to allow for an android device to become ready" type="integer">
+				<cocoa key="s_AndroidDeviceReadyTimeout"/>
+			</property>
+			<property name="android package" code="apap" description="name of android package" type="text">
+				<cocoa key="s_AndroidPackage"/>
+			</property>
+			<property name="android wait activity" code="apwa" description="name of android activity to wait for" type="text">
+				<cocoa key="s_AndroidWaitActivity"/>
+			</property>
+			<property name="app path" code="amap" description="path to mobile application" type="text">
+				<cocoa key="s_AppPath"/>
+			</property>
+			<property name="avd name" code="aavd" description="name of avd" type="text">
+				<cocoa key="s_AVD"/>
+			</property>
+			<property name="break on node app start" code="apbn" description="true if a breakpoint will be set when the node application starts" type="boolean">
+				<cocoa key="s_BreakOnNodeAppStart"/>
+			</property>
+			<property name="bundle id" code="ambi" description="bundle id" type="text">
+				<cocoa key="s_BundleID"/>
+			</property>
+			<property name="check for updates" code="apcu" description="true if appium will check for updates" type="boolean">
+				<cocoa key="s_CheckForUpdates"/>
+			</property>
+			<property name="developer mode" code="apdm" description="true if appium is in developer mode" type="boolean">
+				<cocoa key="s_DeveloperMode"/>
+			</property>
+			<property name="external appium package path" code="aeap" description="path to external appium package" type="text">
+				<cocoa key="s_ExternalAppiumPackagePath"/>
+			</property>
+			<property name="external node path" code="aenp" description="path to external node binaries" type="text">
+				<cocoa key="s_ExternalNodeJSBinaryPath"/>
+			</property>
+			<property name="is server listening" code="amsl" description="true if the appium server is listening" type="boolean" access="r">
+				<cocoa key="s_IsServerListening"/>
+			</property>
+			<property name="is server running" code="amsr" description="true if the appium server is running" type="boolean" access="r">
+				<cocoa key="s_IsServerRunning"/>
+			</property>
+			<property name="keep artifacts" code="apka" description="true if artifacts will be kept after the session" type="boolean">
+				<cocoa key="s_KeepArtifacts"/>
+			</property>
+			<property name="launch avd" code="alav" description="true if appium should launch an avd" type="boolean">
+				<cocoa key="s_UseAVD"/>
+			</property>
+			<property name="log text" code="amlt" description="text from the appium log" type="text" access="r">
+				<cocoa key="s_LogText"/>
+			</property>
+			<property name="node debug port" code="amnd" description="port for the nodeJS debugger" type="integer">
+				<cocoa key="s_NodeDebugPort"/>
+			</property>
+			<property name="node path" code="amnp" description="path to nodejs binary" type="text" access="r">
+				<cocoa key="s_NodePath"/>
+			</property>
+			<property name="prelaunch simulator" code="apps" description="true if the simulator will prelaunch" type="boolean">
+				<cocoa key="s_PrelaunchApp"/>
+			</property>
+			<property name="reset app state" code="aprs" description="true if warp application state will be reset after the session" type="boolean">
+				<cocoa key="s_ResetApplicationState"/>
+			</property>
+			<property name="server address" code="amsa" description="ip address for the appium server" type="text">
+				<cocoa key="s_IPAddress"/>
+			</property>
+			<property name="server port" code="amsp" description="port for the appium server" type="integer">
+				<cocoa key="s_Port"/>
+			</property>
+			<property name="UDID" code="amud" description="device udid" type="text">
+				<cocoa key="s_UDID"/>
+			</property>
+			<property name="use android activity" code="auaa" description="true if an android activity is supplied" type="boolean">
+				<cocoa key="s_UseAndroidActivity"/>
+			</property>
+			<property name="use android device ready timeout" code="audt" description="true if an android device wait timeout will be used" type="boolean">
+				<cocoa key="s_UseAndroidDeviceReadyTimeout"/>
+			</property>
+			<property name="use android package" code="auap" description="true if an android package is supplied" type="boolean">
+				<cocoa key="s_UseAndroidPackage"/>
+			</property>
+			<property name="use android wait activity" code="auaw" description="true if an android wait activity is supplied" type="boolean">
+				<cocoa key="s_UseAndroidWaitActivity"/>
+			</property>
+			<property name="use app path" code="apua" description="true if the app path is being used" type="boolean">
+				<cocoa key="s_UseAppPath"/>
+			</property>
+			<property name="use bundle id" code="aubi" description="true if appium is using the bundle id" type="boolean">
+				<cocoa key="s_UseBundleID"/>
+			</property>
+			<property name="use external appium package" code="auea" description="true if an external appium package path with be used" type="boolean">
+				<cocoa key="s_UseExternalAppiumPackage"/>
+			</property>
+			<property name="use external node path" code="auen" description="true if an external nodeJS binary path with be used" type="boolean">
+				<cocoa key="s_UseExternalNodeJSBinary"/>
+			</property>
+			<property name="use full andoird reset" code="aufr" description="true if appium will use full reset for android" type="boolean">
+				<cocoa key="s_UseAndroidFullReset"/>
+			</property>
+			<property name="use mobile safari" code="aums" description="true if appium will use mobile safari" type="boolean">
+				<cocoa key="s_UseMobileSafari"/>
+			</property>
+			<property name="use native instruments library" code="apni" description="true if the native instruments library will be used" type="boolean">
+				<cocoa key="s_UseNativeInstrumentsLibrary"/>
+			</property>
+			<property name="use node debugger" code="aund" description="true if appium will use node debugging" type="boolean">
+				<cocoa key="s_UseNodeDebugger"/>
+			</property>
+			<property name="use quiet logging" code="auql" description="true if appium will use quiet logging" type="boolean">
+				<cocoa key="s_UseQuietLogging"/>
+			</property>
+			<property name="use remote server" code="aurs" description="true if appium will use a remote server" type="boolean">
+				<cocoa key="s_UseRemoteServer"/>
+			</property>
+			<property name="use UDID" code="apuu" description="true if the udid is being used" type="boolean">
+				<cocoa key="s_UseUDID"/>
+			</property>
+			<responds-to command="clear log">
+				<cocoa method="s_ClearLog:"/>
+			</responds-to>
+			<responds-to command="force ios device">
+				<cocoa method="s_ForceiOSDevice:"/>
+			</responds-to>
+			<responds-to command="force ios orientation">
+				<cocoa method="s_ForceiOSOrientation:"/>
+			</responds-to>
+			<responds-to command="start server">
+				<cocoa method="s_StartServer:"/>
+			</responds-to>
+			<responds-to command="stop server">
+				<cocoa method="s_StopServer:"/>
+			</responds-to>
+			<responds-to command="use platform">
+				<cocoa method="s_UsePlatform:"/>
+			</responds-to>
+		</class>
+		<command name="clear log" code="aapmclog" description="clears the appium server log display"/>
+		<command name="force ios device" code="appmfrcd" description="force a device type">
+			<direct-parameter description="type of ios device to force" type="ios device"/>
+		</command>
+		<command name="force ios orientation" code="appmfrco" description="force an orientation">
+			<direct-parameter description="oreintation to force" type="orientation"/>
+		</command>
+		<command name="start server" code="appmstas" description="starts the appium server">
+			<result description="true if the server was started" type="boolean"/>
+		</command>
+		<command name="stop server" code="appmstos" description="stops the appium server">
+			<result description="true if the server was stopped" type="boolean"/>
+		</command>
+		<command name="use platform" code="appmusep" description="sets the platform">
+			<direct-parameter description="platform to use" type="platform"/>
+		</command>
+	</suite>
+</dictionary>
